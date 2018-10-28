@@ -56,4 +56,27 @@ And so on.
 
 ## Git 
 
-The repos can be found at 
+The repos can be found at [tdd-bdd-experiment](https://github.com/gpratte/tdd-bdd-experiment.git)
+
+The _.gitignore_ ignores the maven and IntelliJ files.
+
+## step-1-bdd
+
+Let's begin by writing a BDD test that tests that high card wins.
+
+Add the
+* RunCucumberTest class
+* Stepdefs class
+* high_card_wins.feature file
+
+Begin by calling the non existent compareTo method. 
+
+See [Interface Comparable<T>](https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html)
+
+
+
+
+
+
+
+x
