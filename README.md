@@ -37,9 +37,9 @@ __step-1-tdd__ branch will show how TDD tests
 
 __step-1-bdd__ branch will show how BDD tests
 
-__step-1-tdd-bdd__ branch will result from merging the previous two branches
+__step-1-tdd-and-bdd__ branch will result from merging the previous two branches
 
-__step-1-tdd-bdd__ will be merged into __master__
+__step-1-tdd-and-bdd__ will be merged into __master__
 
 
 The second branch will be ...
@@ -48,9 +48,9 @@ __step-2-tdd__ will come off the __master__ branch and will enhance the TDD test
 
 __step-2-bdd__ will come off the __master__ branch and will enhance BDD tests
 
-__step-2-tdd-bdd__ branch will result from merging the previous two branches
+__step-2-tdd-and-bdd__ branch will result from merging the previous two branches
 
-__step-2-tdd-bdd__ will be merged into __master__
+__step-2-tdd-and-bdd__ will be merged into __master__
 
 And so on.
 
