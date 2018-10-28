@@ -4,6 +4,6 @@ import lombok.Data;
 
 @Data
 public class Card {
-    private Suit suit;
-    private Rank rank;
+    private final Rank rank;
+    private final Suit suit;
 }
