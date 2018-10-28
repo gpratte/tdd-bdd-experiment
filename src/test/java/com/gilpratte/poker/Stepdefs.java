@@ -1,6 +1,5 @@
 package com.gilpratte.poker;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -18,8 +17,6 @@ public class Stepdefs {
 
     @Given("^AsKs(\\d+)h(\\d+)d(\\d+)c versus AsQs(\\d+)h(\\d+)d(\\d+)c$")
     public void asks_h_d_c_versus_AsQs_h_d_c(int arg1, int arg2, int arg3, int arg4, int arg5, int arg6) {
-
-        System.out.println("!!! arg1 " + arg1);
 
         hand1 = new Hand();
         Card card = new Card(Rank.TWO, Suit.CLUBS);

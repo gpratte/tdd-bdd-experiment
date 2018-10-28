@@ -79,3 +79,13 @@ Add the
 * RunCucumberTest class
 * Stepdefs class
 * high_card_wins.feature file
+
+## step-1-tdd-and-bdd
+
+Combined the TDD and BDD tests.
+
+## step-2-tdd-and-bdd
+
+Implemented the _compareTo_ method on the Hand class. 
+
+Tests now pass.
