@@ -60,18 +60,22 @@ The repos can be found at [tdd-bdd-experiment](https://github.com/gpratte/tdd-bd
 
 The _.gitignore_ ignores the maven and IntelliJ files.
 
-## step-1-tdd
-
-Let's begin by writing a TDD JUnit test that tests that high card wins.
-
-Begin by calling the non existent compareTo method. 
+## step-1
+Both the TDD and BDD write the test but fail to compile because the method they are testing, compareTo, has not yet been written.
 
 See [Interface Comparable<T>](https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html)
 
+## step-1-tdd
 
+Uses JUnit to test that high card wins.
 
+Add the HandTest.
 
+## step-1-bdd
 
+Uses cucumber to test that high card wins.
 
-
-x
+Add the
+* RunCucumberTest class
+* Stepdefs class
+* high_card_wins.feature file
