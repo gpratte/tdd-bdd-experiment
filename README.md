@@ -90,6 +90,9 @@ Implemented the _compareTo_ method on the Hand class.
 
 Tests now pass.
 
+## step-3-tdd
+
+Write another test where the second hand should win. This test will fail because of compareTo blindly returns 1 which means the first hand always wins.
 ## step-3-bdd
 
-Write another feature where the second hand should win. This test will fail because of compareTo blindly returns 1 which means the first hand always wins.
+Write another scenario where the second hand should win. This test will fail because of compareTo blindly returns 1 which means the first hand always wins.
