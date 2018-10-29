@@ -43,6 +43,33 @@ public class Stepdefs {
         hand2.addCard(card);
     }
 
+    @Given("^AsQs(\\d+)h(\\d+)d(\\d+)c versus AsKs(\\d+)h(\\d+)d(\\d+)c$")
+    public void asqs_h_d_c_versus_AsKs_h_d_c(int arg1, int arg2, int arg3, int arg4, int arg5, int arg6) throws Exception {
+        hand1 = new Hand();
+        Card card = new Card(Rank.TWO, Suit.CLUBS);
+        hand1.addCard(card);
+        card = new Card(Rank.THREE, Suit.DIAMONDS);
+        hand1.addCard(card);
+        card = new Card(Rank.FOUR, Suit.HEARTS);
+        hand1.addCard(card);
+        card = new Card(Rank.QUEEN, Suit.SPADES);
+        hand1.addCard(card);
+        card = new Card(Rank.ACE, Suit.SPADES);
+        hand1.addCard(card);
+
+        hand2 = new Hand();
+        card = new Card(Rank.TWO, Suit.CLUBS);
+        hand2.addCard(card);
+        card = new Card(Rank.THREE, Suit.DIAMONDS);
+        hand2.addCard(card);
+        card = new Card(Rank.FOUR, Suit.HEARTS);
+        hand2.addCard(card);
+        card = new Card(Rank.KING, Suit.SPADES);
+        hand2.addCard(card);
+        card = new Card(Rank.ACE, Suit.SPADES);
+        hand2.addCard(card);
+    }
+
     @When("^I ask whether which hands wins$")
     public void i_ask_whether_which_hands_wins() {
         int comparison = hand1.compareTo(hand2);
