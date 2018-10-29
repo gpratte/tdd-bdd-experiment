@@ -19,7 +19,7 @@ Initially there will be the following classes.
 * Card - has a Rank and Suit
 * Hand - has five cards
 
-The Suit and Rank enums will not be tests, they are enums after all.
+The Suit and Rank enums will not be tested, they are enums after all.
 
 The Card will use the lombok _@Data_ annotation so it will not need testing.
 
@@ -27,15 +27,15 @@ The Hand will be tested. Originally the Hand is an empty class (i.e. no methods)
 
 ## Course of Action
 
-Everything will be done on a branch and the branches. The branches will be numbered so that they can be referenced so see how the tests progress.
+Everything will be done on branches. The branches will be numbered so that they can be referenced to see how the tests progress.
 
 There will be a TDD branch and a BDD branch. At each step those branches will be merged into a TDD-BDD branch.
 
 For example the first branch will be...
 
-__step-1-tdd__ branch will show how TDD tests
+__step-1-tdd__ branch will show how start a TDD test
 
-__step-1-bdd__ branch will show how BDD tests
+__step-1-bdd__ branch will show how to start a BDD test
 
 __step-1-tdd-and-bdd__ branch will result from merging the previous two branches
 
@@ -61,9 +61,7 @@ The repos can be found at [tdd-bdd-experiment](https://github.com/gpratte/tdd-bd
 The _.gitignore_ ignores the maven and IntelliJ files.
 
 ## step-1
-Both the TDD and BDD write the test but fail to compile because the method they are testing, compareTo, has not yet been written.
-
-See [Interface Comparable<T>](https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html)
+Both the TDD and BDD tests fail to compile because the method they are testing, _compareTo_, has not yet been written in the Hand class.
 
 ## step-1-tdd
 
@@ -87,6 +85,8 @@ Combined the TDD and BDD tests.
 ## step-2-tdd-and-bdd
 
 Implemented the _compareTo_ method on the Hand class. 
+
+See [Interface Comparable<T>](https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html)
 
 Tests now pass.
 
