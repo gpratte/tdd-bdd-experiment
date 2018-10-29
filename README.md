@@ -96,3 +96,7 @@ Write another test where the second hand should win. This test will fail because
 ## step-3-bdd
 
 Write another scenario where the second hand should win. This test will fail because of compareTo blindly returns 1 which means the first hand always wins.
+
+## step-3-tdd-and-bdd
+
+Combined step 3 TDD and BDD
