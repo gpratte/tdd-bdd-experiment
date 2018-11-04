@@ -6,8 +6,11 @@ import org.junit.Test;
 
 public class HandTest {
 
+    /*
+     * Test hand 1 beats hand 2 high card
+     */
     @Test
-    public void testCompareHighCardHand1Wins() {
+    public void testH1BeatsH2HighCard() {
 
         String winner = "As, Ks, 4h, 3d, 2c";
         Hand winningHand = new Hand();
@@ -38,8 +41,12 @@ public class HandTest {
         Assert.assertTrue(winner + " should beat " + loser, winningHand.compareTo(losingHand) > 0);
 
     }
+
+    /*
+     * Test hand 1 loses to hand 2 high card
+     */
     @Test
-    public void testCompareHighCardHand2Wins() {
+    public void testH1LosesToH2HighCard() {
 
         String winner = "As, Ks, 4h, 3d, 2c";
         Hand winningHand = new Hand();
