@@ -6,8 +6,11 @@ import org.junit.Test;
 
 public class HandTest {
 
+    /*
+     * Test hand 1 beats hand 2 high card
+     */
     @Test
-    public void testCompareHighCard() {
+    public void testH1BeatsH2HighCard() {
 
         String winner = "As, Ks, 4h, 3d, 2c";
         Hand winningHand = new Hand();
