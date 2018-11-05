@@ -100,3 +100,12 @@ Write another scenario where the second hand should win. This test will fail bec
 ## step-3-tdd-and-bdd
 
 Combined step 3 TDD and BDD
+
+## step-4-tdd-and-bdd
+
+Implemented comparing two high card hands.
+
+Also tested and implemented two hands that tie.
+
+Tests now pass.
+

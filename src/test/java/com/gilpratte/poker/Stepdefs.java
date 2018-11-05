@@ -15,59 +15,15 @@ public class Stepdefs {
     private Hand hand2;
     private String actualAnswer;
 
-    @Given("^AsKs(\\d+)h(\\d+)d(\\d+)c versus AsQs(\\d+)h(\\d+)d(\\d+)c$")
-    public void asks_h_d_c_versus_AsQs_h_d_c(int arg1, int arg2, int arg3, int arg4, int arg5, int arg6) {
+    @Given("^\"([^\"]*)\" versus \"([^\"]*)\"$")
+    public void versus(String arg1, String arg2)  {
 
-        hand1 = new Hand();
-        Card card = new Card(Rank.TWO, Suit.CLUBS);
-        hand1.addCard(card);
-        card = new Card(Rank.THREE, Suit.DIAMONDS);
-        hand1.addCard(card);
-        card = new Card(Rank.FOUR, Suit.HEARTS);
-        hand1.addCard(card);
-        card = new Card(Rank.KING, Suit.SPADES);
-        hand1.addCard(card);
-        card = new Card(Rank.ACE, Suit.SPADES);
-        hand1.addCard(card);
+        System.out.println("arg1 " + arg1);
+        hand1 = new Hand(arg1);
+        System.out.println("hand1 " + hand1);
 
-        hand2 = new Hand();
-        card = new Card(Rank.TWO, Suit.CLUBS);
-        hand2.addCard(card);
-        card = new Card(Rank.THREE, Suit.DIAMONDS);
-        hand2.addCard(card);
-        card = new Card(Rank.FOUR, Suit.HEARTS);
-        hand2.addCard(card);
-        card = new Card(Rank.QUEEN, Suit.SPADES);
-        hand2.addCard(card);
-        card = new Card(Rank.ACE, Suit.SPADES);
-        hand2.addCard(card);
-    }
-
-    @Given("^AsQs(\\d+)h(\\d+)d(\\d+)c versus AsKs(\\d+)h(\\d+)d(\\d+)c$")
-    public void asqs_h_d_c_versus_AsKs_h_d_c(int arg1, int arg2, int arg3, int arg4, int arg5, int arg6) throws Exception {
-        hand1 = new Hand();
-        Card card = new Card(Rank.TWO, Suit.CLUBS);
-        hand1.addCard(card);
-        card = new Card(Rank.THREE, Suit.DIAMONDS);
-        hand1.addCard(card);
-        card = new Card(Rank.FOUR, Suit.HEARTS);
-        hand1.addCard(card);
-        card = new Card(Rank.QUEEN, Suit.SPADES);
-        hand1.addCard(card);
-        card = new Card(Rank.ACE, Suit.SPADES);
-        hand1.addCard(card);
-
-        hand2 = new Hand();
-        card = new Card(Rank.TWO, Suit.CLUBS);
-        hand2.addCard(card);
-        card = new Card(Rank.THREE, Suit.DIAMONDS);
-        hand2.addCard(card);
-        card = new Card(Rank.FOUR, Suit.HEARTS);
-        hand2.addCard(card);
-        card = new Card(Rank.KING, Suit.SPADES);
-        hand2.addCard(card);
-        card = new Card(Rank.ACE, Suit.SPADES);
-        hand2.addCard(card);
+        hand2 = new Hand(arg2);
+        System.out.println("hand2 " + hand2);
     }
 
     @When("^I ask whether which hands wins$")
@@ -86,6 +42,5 @@ public class Stepdefs {
     public void i_should_be_told(String expectedAnswer) {
         Assert.assertEquals(expectedAnswer, actualAnswer);
     }
-
 
 }
