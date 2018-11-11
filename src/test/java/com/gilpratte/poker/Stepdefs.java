@@ -15,7 +15,7 @@ public class Stepdefs {
     private Hand hand2;
     private String actualAnswer;
 
-    @Given("^\"([^\"]*)\" versus \"([^\"]*)\"$")
+    @Given("(.*) versus (.*)$")
     public void versus(String arg1, String arg2)  {
 
         System.out.println("arg1 " + arg1);
@@ -38,7 +38,7 @@ public class Stepdefs {
         }
     }
 
-    @Then("^I should be told \"([^\"]*)\"$")
+    @Then("^I should be told (.*)$")
     public void i_should_be_told(String expectedAnswer) {
         Assert.assertEquals(expectedAnswer, actualAnswer);
     }
