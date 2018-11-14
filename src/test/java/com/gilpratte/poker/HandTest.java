@@ -20,6 +20,9 @@ public class HandTest {
         Triplet<String, String, Integer> scenario = Triplet.with("AsKs4h3d2c", "AsQs4h3d2c", 1);
         scenarios.add(scenario);
 
+        scenario = Triplet.with("Jc10c8h5s2d", "9s8s7s5h3d", 1);
+        scenarios.add(scenario);
+
         scenario = Triplet.with("AsQs4h3d2c", "AsKs4h3d2c", -1);
         scenarios.add(scenario);
 
@@ -41,7 +44,6 @@ public class HandTest {
 
             // Act
             int actual = hand1.compareTo(hand2);
-            System.out.println("actual " + actual);
 
             // Assert
             Assert.assertEquals(expected, actual);
