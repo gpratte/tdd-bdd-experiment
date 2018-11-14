@@ -16,13 +16,12 @@ public class Stepdefs {
     private String actualAnswer;
 
     @Given("(.*) versus (.*)$")
-    public void versus(String arg1, String arg2)  {
+    public void versus(String first, String second)  {
 
-        System.out.println("arg1 " + arg1);
-        hand1 = new Hand(arg1);
+        hand1 = new Hand(first);
         System.out.println("hand1 " + hand1);
 
-        hand2 = new Hand(arg2);
+        hand2 = new Hand(second);
         System.out.println("hand2 " + hand2);
     }
 

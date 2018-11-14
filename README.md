@@ -109,3 +109,6 @@ Also tested and implemented two hands that tie.
 
 Tests now pass.
 
+## step-5-bdd
+
+Move to scenario outlines
