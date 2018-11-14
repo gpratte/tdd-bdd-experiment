@@ -115,3 +115,7 @@ A single test method that iterates through a list of scenarios. Similar to the s
 ## step-5-bdd
 
 Move to scenario outlines
+
+## step-5-tdd-and-bdd
+
+Merge step-5-tdd and step-5-bdd.
