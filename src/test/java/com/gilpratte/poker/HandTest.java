@@ -46,7 +46,15 @@ public class HandTest {
             int actual = hand1.compareTo(hand2);
 
             // Assert
-            Assert.assertEquals(expected, actual);
+            if (expected < 0 && actual >=  0) {
+                Assert.fail("expected is less than but actual is not less than");
+            } else if (expected == 0 && actual !=  0) {
+                Assert.fail("expected is the same but actual is not the same");
+            } else if (expected > 0 && actual <=  0) {
+                Assert.fail("expected is greater than but actual is not greater than");
+            }
+
+            Assert.assertTrue(true);
         }
     }
 
